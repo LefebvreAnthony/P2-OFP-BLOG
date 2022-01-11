@@ -1,0 +1,104 @@
+@import url(../font/font.css);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.displayFlex {
+    display: flex;
+}
+/************* HEADER ************/
+header {
+    height: 70vh;
+    background: center/cover no-repeat url(../img/headerBackground.png);
+    color: #fff;
+}
+#headerNav {
+    margin: 0 5rem;
+    justify-content: space-between;
+}
+#headerNav > a > figure{
+    width: 25rem;
+}
+#headerNav > a > figure > img {
+    width: 100%;
+}
+nav {
+    align-items: center;
+}
+nav > ul > li {
+    list-style: none;
+    margin-right: 4rem;
+    position: relative;
+}
+nav > ul > li:last-child {
+    margin-right: 5rem;
+}
+nav > ul > li:first-child::after, nav > ul > li:nth-of-type(2)::after {
+    position: absolute;
+    top: 0%;
+    right: -3rem;
+    content: "-";
+    font-size: 4.5rem;
+    font-weight: 500;
+
+}
+nav > ul > li > a {
+    font-family: 'Romanesco', cursive;
+    font-size: 4.5rem;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+#headerTitle {
+    margin-top: 5rem;
+    text-align: center;
+}
+#headerTitle > h1 {
+    font-size: 10rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    font-family: 'Romanesco', cursive;
+
+}
+
+
+
+/************ FOOTER *************/
+
+footer {
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #4A0202;
+}
+footer > div > h3 {
+    font-family: 'Rye';
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+#partenaires, #histoire {
+    border-right: 2px solid rgba(255, 255, 255, 0.432);
+}
+#partenaires > ul > li {
+    font-size: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+#histoire > p {
+    font-size: 1.3rem;
+    display: block;
+    width: 50%;
+}
+#follow > ul > li {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
