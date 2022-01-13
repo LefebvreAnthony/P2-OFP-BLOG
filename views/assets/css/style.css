@@ -102,3 +102,11 @@ footer > div {
     list-style: none;
     margin-bottom: 1.5rem;
 }
+
+
+/*******************  PAGE CATEGORIE ****************/
+
+#list_categories  {
+    color: #fff;
+    font-size: 2rem;
+}
