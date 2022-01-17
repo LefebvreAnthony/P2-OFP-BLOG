@@ -107,6 +107,7 @@ footer > div {
 /*******************  PAGE CATEGORIE ****************/
 
 #list_categories  {
+    text-decoration: none;
     color: #fff;
     font-size: 2rem;
 }

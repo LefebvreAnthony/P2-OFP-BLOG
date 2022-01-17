@@ -19,6 +19,7 @@
                 <ul class="displayFlex">
                     <li><a href="../P2-OFP-BLOG/index.php">Acceuil</a></li>
                     <li><a href="../P2-OFP-BLOG/articles.php">Tout les articles</a></li>
+                    <li><a href="../P2-OFP-BLOG/formulaire_recette.php">Ajoutez une recette</a></li>
                     <li><a href="../P2-OFP-BLOG/categories.php">Catégories</a></li>
                 </ul>
             </nav>
