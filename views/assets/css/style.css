@@ -63,6 +63,12 @@ nav > ul > li > a {
 
 }
 
+/********** MAIN ************/
+
+main {
+    background-color: #b58c6977;
+    padding: 2% 10%;
+}
 
 
 /************ FOOTER *************/
@@ -107,7 +113,84 @@ footer > div {
 /*******************  PAGE CATEGORIE ****************/
 
 #list_categories  {
-    text-decoration: none;
-    color: #fff;
     font-size: 2rem;
+}
+#list_categories a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+/************ FORM RECETTE ****************/
+#form_recette > h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-family: 'Romanesco', cursive;
+    font-size: 7rem;
+    letter-spacing: 0.3rem;
+    
+}
+#form_recette label, #form_recette h3 {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'rye', cursive;
+    font-size: 1.8rem;
+}
+#titre_article {
+    height: 25px;
+}
+#form_recette input[type=text] {
+    font-weight: 600;
+    background-color: #4341414d;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+}
+#description_article, #ingredients_article, #preparation_article {
+    width: 70%;
+    height: 10rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+#form_recette_1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+#form_recette_1 > div:first-child {
+    width: 33%;
+}
+#form_recette_1 > div > div, #form_recette_2 > div {
+    margin-bottom: 2rem;
+}
+#form_recette_2 {
+    text-align: center;
+}
+
+#form_recette input[type=date] {
+    width: 20%;
+    height: 2rem;
+    text-align: center;
+    font-weight: 700;
+}
+#block_categorie label {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+#form_recette > input[type=submit] {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 50%;
+    font-weight: 700;
+    transform: translateX(-50%);
+    transition: 300ms;
+}
+#form_recette > input[type=submit]:hover {
+    background-color: #4A0202;
+    color: #fff;
 }
