@@ -24,16 +24,16 @@
     </div>
     <div id="form_recette_2">
         <div id="block_categorie">
-            <h3>Indiquez la(les) catégorie(s) de votre recette</h3><br>
+            <h3>Indiquez la(les) catégorie(s) de votre recette</h3>
+            <div>
             <?php
                 foreach($categories as $cat) {
             ?>
-            <input type="checkbox" name="<?=$cat['nom_categorie']?>" id="<?=$cat['nom_categorie']?>" value="">
-            <label for="<?=$cat['nom_categorie']?>"><?=$cat['nom_categorie']?></label>
-
+            <label"><?=$cat['nom_categorie']?><input type="checkbox" name="categorie[]" value="<?=$cat['id_categorie']?>"></label>
             <?php
                 }
             ?>
+            </div>
         </div>
         <div>
             <label for="ingredients_article">Ajoutez les ingrédients nécessaires à la recette : </label><br>
@@ -50,7 +50,7 @@
         <label for="date_publication_article">Veuillez entrer la date d'aujourd'hui : </label><br>
         <input type="date" name="date_publication_article" id="date_publication_article" value="2022-01-04" min="2022-01-04" required>
     </div>
-    <input type="submit" value="Validez votre recette !">
+    <input type="submit" name="submit" value="Validez votre recette !">
 </form>
 <?php
 

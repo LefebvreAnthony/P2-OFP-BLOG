@@ -8,7 +8,7 @@
     foreach($req as $categories) {
 ?>
         <li>
-            <a href="../P2-OFP-BLOG/articles.php?id_categorie=<?=$categories['id_categorie']?>"><?=$categories['nom_categorie']?></a>
+            <a href="../P2-OFP-BLOG/articles.php?id_categorie=<?=$categories['id_categorie']?>" style="background: center/cover no-repeat url('./views/assets/img/img_categorie/<?=$categories['img_categorie']?>')"><?=$categories['nom_categorie']?></a>
         </li>
 <?php
 
