@@ -214,11 +214,12 @@ footer > div {
 #all_articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
+    gap: 5rem;
 }
 #all_articles > article {    
     position: relative;
     min-height: 45rem;
+    border-radius: 0.8rem;
 }
 #all_articles > article > h2 {
     position: absolute;
@@ -258,6 +259,8 @@ footer > div {
 .img_articles {
     width: 100%;
     height: 400px;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
 }
 .lien_article {
     position: absolute;
@@ -271,4 +274,49 @@ footer > div {
     color: #EED0D0;
     background-color: #000;
     padding: .8rem 2rem;
+}
+
+
+/******** ARTICLE UNIQUE **********/
+#article_unique {
+    background-color: #EBD593;
+    padding: 5rem;
+}
+#article_unique > h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Rye';
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+#top_article {
+    margin-bottom: 3rem;
+}
+#article_unique > div > figure {
+    width: 40%;
+    box-shadow: 0 0 10px 1px #000;
+    margin-right: 5rem;
+}
+#article_unique > div > figure > img {
+    width: 100%;
+    height: 100%;
+}
+#desc_ing {
+    width: 60%;
+}
+#desc_ing h3, #prep_unique h3 {
+    display: inline-block;
+    font-size: 4rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.185);
+    font-family: 'Romanesco', cursive;
+    letter-spacing: 1rem;
+}
+#desc_ing p, #prep_unique p {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -17,7 +17,7 @@ foreach($req as $article) {
             <p class="date_publier">le <?= $article['date_publication_article']?></p>
             <p class="description_articles"><?= $article['description_article'] ?></p>
         </div>
-        <a class="lien_article" href="#">En savoir +</a>
+        <a class="lien_article" href="article.php?id=<?=$article['id_article']?>">Lire la recette</a>
     </article>
 <?php
 }
