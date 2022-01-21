@@ -38,7 +38,9 @@
                 $req_cat->bindParam('idcat', $cat, PDO::PARAM_INT);
                 $req_cat->bindParam('idart', $last_id, PDO::PARAM_INT);
                 $req_cat->execute();
+            
             }
+        header('Location: ./index.php');
         }
         
     } else {
